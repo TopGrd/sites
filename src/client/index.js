@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import Router from './router'
 import * as models from './models'
 
+import './assets/css/main.css';
+
 const store = init({ models })
 
 ReactDOM.render(

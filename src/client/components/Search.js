@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import google from '../assets/google.png'
-import search from '../assets/search.png'
+import google from '../assets/img/google.png'
+import search from '../assets/img/search.png'
 
 const SearchWrapper = styled.div`
   display: flex;
@@ -11,15 +11,15 @@ const SearchWrapper = styled.div`
 
 const SearchLeft = styled.div`
   display: flex;
-  width: 877px;
+  width: 80%;
   height: 54px;
   line-height: 20px;
   border: 1px solid;
   outline: 0;
+  background-color: #fff;
   border-color: ${({ focus }) =>
     focus ? '#fda31e' : 'rgba(217, 217, 217, 0.96)'};
-  box-shadow: ${({ focus }) =>
-    focus ? '0 0 10px #fda31e' : 'none'};
+  box-shadow: ${({ focus }) => (focus ? '0 0 10px #fda31e' : 'none')};
 `
 
 const SearchLogo = styled.div`
@@ -28,7 +28,6 @@ const SearchLogo = styled.div`
   justify-content: center;
   background: url(${google}) center center no-repeat;
   filter: grayscale(100%);
-  filter: alpha(opacity=20);
   opacity: 0.2;
   cursor: pointer;
 
