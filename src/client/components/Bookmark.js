@@ -6,8 +6,14 @@ const Wrapper = styled.div`
   margin-top: 1rem;
 `
 
-const BookmarkMain = ({ children }) => (
+const BookmarkMain = () => (
   <div className="row">
+    <Wrapper className="col-xs-4">
+      <BookmarkBox />
+    </Wrapper>
+    <Wrapper className="col-xs-4">
+      <BookmarkBox />
+    </Wrapper>
     <Wrapper className="col-xs-4">
       <BookmarkBox />
     </Wrapper>

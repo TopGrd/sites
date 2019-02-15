@@ -13,6 +13,9 @@
     "no-console": "off",
     "react/jsx-filename-extension": "off",
     "import/no-extraneous-dependencies": "off",
-    "semi": ["never"]
+    "semi": ["error", "never"],
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off"
   }
 }

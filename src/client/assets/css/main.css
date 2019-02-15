@@ -418,6 +418,7 @@
 }
 
 body {
+  background: url(../img/123.jpg) 100%;
   background-color: #f5f6f8;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

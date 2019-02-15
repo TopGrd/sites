@@ -26,19 +26,34 @@ const LinkWrapper = styled.div`
   padding: 1px 1px 1px 1px;
 `
 
+const BookmarkCat = styled.a`
+  position: relative;
+  padding-top: 2px;
+  display: block;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+  border-radius: 2px;
+  text-decoration: none;
+  z-index: 10;
+`
 
-const s = new Array(9).fill(true).map(item => {
-  return (
-    <LinkWrapper className="col-xs-4">
-      <BookmarkLink>Google</BookmarkLink>
-    </LinkWrapper>
-  )
-})
+const LinkBox = styled.div`
+  padding-left: 1rem;
+`
+
+const s = new Array(9).fill(true).map(({ key }) => (
+  <LinkWrapper className="col-xs-4" key={key}>
+    <BookmarkLink>Google</BookmarkLink>
+  </LinkWrapper>
+))
 
 const BookmarkBox = () => (
-  <div className="row">
-    {s}
-  </div>
+  <>
+    <BookmarkCat>工作</BookmarkCat>
+    <LinkBox className="row">{s}</LinkBox>
+  </>
 )
 
 export default BookmarkBox
